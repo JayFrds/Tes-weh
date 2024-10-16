@@ -1,0 +1,36 @@
+.laptop {
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
+  margin: 50px auto; /* Center the laptop */
+}
+
+.laptop-screen {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease-in-out;
+  position: relative; /* Untuk menempatkan elemen lain di atasnya */
+}
+
+.laptop-screen.open {
+  transform: rotateX(30deg);
+}
+
+.laptop-body {
+  width: 100%;
+  height: 20%;
+  background-color: #333;
+  position: absolute;
+  bottom: 0;
+}
+
+.laptop-keyboard {
+  width: 80%;
+  height: 100%;
+  background-color: #666;
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+}
